@@ -1,0 +1,277 @@
+/* Definições das variáveis CSS */
+
+:root {
+  /* Cores */
+  --color-bg: #f4f4f4;
+  --color-text: #333;
+  --color-white: #fff;
+  --color-black: #000;
+  --color-border: #000;
+  --color-nav: #ccc;
+  --color-placeholder: #888;
+
+  /* Tipografia */
+  --font-main: "Poppins", sans-serif;
+  --font-size-base: 16px;
+  --font-size-small: 14px;
+  --font-size-large: 75px;
+
+  /* Layout */
+  --container-width: 1080px;
+  --padding-default: 20px 15px;
+  --gap: 15px;
+  --radius: 8px;
+  --shadow-hover: 8px 8px 0px var(--color-black);
+  --shadow-active: 4px 4px 0px var(--color-text);
+
+  /* Formulário */
+  --input-padding: 8px;
+  --button-padding: 10px;
+  --form-radius: 6px;
+}
+
+/* Limpando formatação padrão navegador */
+body, h1, h2, p, ul {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-main);
+  font-weight: 400;
+  font-style: normal;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-size: var(--font-size-base);
+}
+
+.paddingPadrao {
+  padding: var(--padding-default);
+}
+
+/* Header */
+.header-fixed {
+  display: flex;
+  align-items: center;
+  gap: var(--gap);
+  padding: 15px;
+  background-color: var(--color-white);
+}
+
+.foto-header {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid var(--color-black);
+}
+
+/* Efeito de transição nos links e botões */
+
+.transicao.active {
+  color: var(--color-black);
+  box-shadow: var(--shadow-active);
+}
+.transicao:hover {
+  box-shadow: var(--shadow-hover);
+  transform: translate(-2px, -2px);
+}
+
+/* Menu */
+nav {
+  background-color: var(--color-nav);
+  padding: 20px;
+  position: relative;
+  top: 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 10px 0;
+  justify-content: flex-start;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li:first-child {
+  margin-left: 0;
+}
+
+nav ul li a {
+  padding: 10px 12px;
+  color: var(--color-black);
+  text-decoration: none;
+  font-weight: bold;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background-color: var(--color-white);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+/* Abas */
+.tab {
+  display: none;
+  padding: 20px;
+}
+
+.tab.active {
+  display: block;
+  animation: fade 0.3s ease-in;
+}
+
+@keyframes fade {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.borda {
+  border-top: 1px solid var(--color-border);
+}
+
+
+/* Conteúdo principal */
+
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0;
+  border-left: 1px solid var(--color-border);
+  border-right: 1px solid var(--color-border);
+}
+.container h3{
+  line-height: 1;
+}
+.container p{
+  line-height: 1.75;
+}
+
+main ul {
+  margin: 15px 0;
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+main li {
+  margin-bottom: 0.75em;
+  line-height: 1.25;
+}
+
+/* Formulário */
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 400px;
+}
+
+.formulario input,
+.formulario textarea,
+.formulario button {
+  font-family: var(--font-main);
+  font-size: var(--font-size-base);
+}
+
+.formulario input::placeholder,
+.formulario textarea::placeholder {
+  font-family: var(--font-main);
+  font-size: var(--font-size-base);
+  color: var(--color-placeholder);
+}
+
+
+.formulario label {
+  font-weight: bold;
+}
+
+.formulario input,
+.formulario textarea {
+  padding: var(--input-padding);
+  border: 1px solid var(--color-border);
+  border-radius: var(--form-radius);
+}
+
+.formulario button {
+  background: var(--color-white);
+  color: var(--color-black);
+  border: 1px solid var(--color-border);
+  padding: var(--button-padding);
+  border-radius: var(--form-radius);
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.formulario button:hover {
+  background: var(--color-white);
+}
+
+/* Responsividade */
+
+@media (max-width: 768px) {
+  .header-fixed {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .foto-header {
+    width: 80px;
+    height: 80px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  nav ul li {
+    margin: 0;
+  }
+
+  nav ul li a {
+    display: block;
+    text-align: center;
+  }
+
+  .container {
+    padding: 0 10px;
+    border-left: none;
+    border-right: none;
+  }
+
+    .container ul {
+    padding: 0px 15px;
+  
+  }
+
+  .formulario {
+    max-width: 100%;
+  }
+
+
+
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: var(--font-size-small);
+  }
+
+  nav {
+    padding: 10px;
+  }
+
+  nav ul li a {
+    padding: 8px 10px;
+    font-size: var(--font-size-small);
+  }
+
+  .formulario button {
+    padding: 8px;
+  }
+}
