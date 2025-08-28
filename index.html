@@ -1,94 +1,114 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre mim</title>
-    <link rel="stylesheet" href="styles/style.css">
-    <script src="scripts/main.js"></script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ewerton Caripuna - Portfólio</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <script src="scripts/main.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 </head>
+
 <body class="container">
- <header class="header-fixed">
-  <img src="images/foto.png" alt="Ewerton Caripuna" class="foto-header">
-  <div class="title-header">
-    <h1>Ewerton Caripuna</h1>
-    <p>Cursando Engenharia de Software | Residência DevSecOps</p>
-  </div>
-</header>
+  <!--Cabeçalho-->
+  <header class="header-fixed">
+    <img src="images/foto.png" alt="Ewerton Caripuna" class="foto-header">
+    <div class="title-header">
+      <h1>Ewerton Caripuna</h1>
+      <p>Cursando Engenharia de Software | Residência DevSecOps</p>
+    </div>
+  </header>
 
-    <div class="borda"></div>
-    <!-- Menu -->
+  <div class="borda"></div>
+
+  <!-- Menu -->
   <nav class="paddingPadrao">
-   <ul>
-    <li><a href="#" data-tab="sobre" class="transicao active">Sobre Mim</a></li>
-    <li><a href="#" data-tab="formacao" class="transicao">Formação</a></li>
-    <li><a href="#" data-tab="portfolio" class="transicao">Portfolio</a></li>
-        <li><a href="#" data-tab="contato" class="transicao">Contato</a></li>
-  </ul>
-</nav>
-<div class="borda"></div>
-  
+    <ul>
+      <li><a href="#" data-tab="sobre" class="transicao active" aria-label="Sobre">Sobre Mim</a></li>
+      <li><a href="#" data-tab="formacao" class="transicao" aria-label="Formação">Formação</a></li>
+      <li><a href="#" data-tab="portfolio" class="transicao" aria-label="Portfólio">Portfolio</a></li>
+      <li><a href="#" data-tab="contato" class="transicao" aria-label="Contato">Contato</a></li>
+    </ul>
+  </nav>
 
-<main>
-<section id="sobre" class="tab active">
+  <div class="borda"></div>
 
-      <p>Sou estudante de Engenharia de Software pela UNINTER, com forte interesse nas áreas de desenvolvimento de software e cibersegurança. 
-        Atualmente, participo de uma residência tecnológica na RNP, com foco em cybersegurança, o que tem me proporcionado experiência prática em segurança 
+  <!--Conteudo-->
+  <main>
+    <article id="sobre" class="tab active">
+
+      <p>Sou estudante de Engenharia de Software pela UNINTER, com forte interesse nas áreas de desenvolvimento de
+        software e cibersegurança.
+        Atualmente, participo de uma residência tecnológica na RNP, com foco em cybersegurança, o que tem me
+        proporcionado experiência prática em segurança
         da informação, análise de vulnerabilidades e boas práticas em DevSecOps.</p>
-    
-</section>
 
-<section id="formacao" class="tab">
-  <p>Ao longo da minha trajetória, concluí cursos e bootcamps que consolidaram minha base técnica, entre eles:
+    </article>
 
-<ul>
-    <li><strong>Java</strong> com Nélio Alves (fundamentos, POO e aplicações práticas);</li>
-    <li><strong>Hackers do Bem</strong> (formação em segurança cibernética e ética hacker);</li>
-    <li><strong>Oracle Next Education (ONE) pela Alura</strong> (Java e desenvolvimento de aplicações modernas);</li>
-    <li><strong>Bootcamp Santander em Java pela DIO.me</strong> (projetos práticos e boas práticas de desenvolvimento).</li>
-  </ul></p>
-</section>
+    <article id="formacao" class="tab">
 
-<section id="contato" class="tab">
-<form action="mailto:ewertoncaripuna@outlook.com" method="post" enctype="text/plain" class="formulario">
-    <input type="text" name="nome" placeholder="Seu nome" required>
-    <input type="email" name="email" placeholder="Seu email" required>
-    <textarea name="mensagem" placeholder="Sua mensagem" rows="5" required></textarea>
-    <button type="submit" class="transicao">Enviar</button>
-  </form>
-</section>
+      <p>Ao longo da minha trajetória, concluí cursos e bootcamps que consolidaram minha base técnica, entre eles:
+      </p>
+      <ul>
+        <li><strong>Java</strong> com Nélio Alves (fundamentos, POO e aplicações práticas);</li>
+        <li><strong>Hackers do Bem</strong> (formação em segurança cibernética e ética hacker);</li>
+        <li><strong>Oracle Next Education (ONE) pela Alura</strong> (Java e desenvolvimento de aplicações modernas);
+        </li>
+        <li><strong>Bootcamp Santander em Java pela DIO.me</strong> (projetos práticos e boas práticas de
+          desenvolvimento).</li>
+      </ul>
 
-<section id="portfolio" class="tab">
+    </article>
 
-  <div class="portfolio-item">
+    <article id="contato" class="tab">
+      <form action="mailto:ewertoncaripuna@outlook.com" method="post" enctype="text/plain" class="formulario">
+        <input type="text" name="nome" placeholder="Seu nome" required>
+        <input type="email" name="email" placeholder="Seu email" required>
+        <textarea name="mensagem" placeholder="Sua mensagem" rows="5" required></textarea>
+        <button type="submit" class="transicao">Enviar</button>
+      </form>
+    </article>
 
-    <h3>Desafio Backend Itaú</h3>
-    <p>
-      Projeto de backend desenvolvido em Java para um desafio técnico, com foco em boas práticas e estrutura de API.
-    </p>
-    <a href="https://github.com/ewertoncaripuna/desafio-backend-itau" target="_blank" class="portfolio-link">
-      Ver no GitHub
-    </a>
-  </div>
+    <article id="portfolio" class="tab">
 
-  <div class="portfolio-item">
+      <div class="portfolio-item">
 
-    <h3>Estudo de Caso – Pipeline DevSecOps com Flask</h3>
-    <p>
-      Estudo de caso em DevSecOps, implementando um pipeline de CI/CD e testes automatizados em uma aplicação to-do list em Flask. 
-      Foram aplicados testes de segurança SAST (Bandit, SonarQube) e DAST (OWASP ZAP), monitoramento com Prometheus/Grafana, análise de imagens Docker com Trivy e otimização com DockerSlim, além de infraestrutura como código com Terraform. O objetivo é demonstrar segurança e qualidade integradas ao ciclo de desenvolvimento (Shift Left Security).
-    </p>
-    <a href="https://github.com/ewertoncaripuna/estudo-de-caso--HDB--DevSecOps" target="_blank" class="portfolio-link">
-      Ver no GitHub
-    </a>
-  </div>
-</section>
+        <h3>Desafio Backend Itaú</h3>
+        <p>
+          Projeto de backend desenvolvido em Java para um desafio técnico, com foco em boas práticas e estrutura de API.
+        </p>
+        <a href="https://github.com/ewertoncaripuna/desafio-backend-itau" target="_blank" aria-label="desafio-backend-itau" class="portfolio-link">
+          Ver no GitHub
+        </a>
+      </div>
 
-</main>
-    <div class="borda"></div>
-  
+      <div class="portfolio-item">
+
+        <h3>Estudo de Caso – Pipeline DevSecOps com Flask</h3>
+        <p>
+          Estudo de caso em DevSecOps, implementando um pipeline de CI/CD e testes automatizados em uma aplicação to-do
+          list em Flask.
+          Foram aplicados testes de segurança SAST (Bandit, SonarQube) e DAST (OWASP ZAP), monitoramento com
+          Prometheus/Grafana, análise de imagens Docker com Trivy e otimização com DockerSlim, além de infraestrutura
+          como código com Terraform. O objetivo é demonstrar segurança e qualidade integradas ao ciclo de
+          desenvolvimento (Shift Left Security).
+        </p>
+        <a href="https://github.com/ewertoncaripuna/estudo-de-caso--HDB--DevSecOps" aria-label="estudo-de-caso--HDB--DevSecOps" target="_blank"
+          class="portfolio-link">
+          Ver no GitHub
+        </a>
+      </div>
+    </article>
+
+  </main>
+
+  <div class="borda"></div>
+
 </body>
+
 </html>

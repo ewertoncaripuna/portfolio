@@ -31,7 +31,11 @@
 }
 
 /* Limpando formatação padrão navegador */
-body, h1, h2, p, ul {
+body,
+h1,
+h2,
+p,
+ul {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -73,6 +77,7 @@ body {
   color: var(--color-black);
   box-shadow: var(--shadow-active);
 }
+
 .transicao:hover {
   box-shadow: var(--shadow-hover);
   transform: translate(-2px, -2px);
@@ -124,8 +129,15 @@ nav ul li a {
 }
 
 @keyframes fade {
-  from { opacity: 0; transform: translateY(10px); }
-  to   { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .borda {
@@ -142,10 +154,12 @@ nav ul li a {
   border-left: 1px solid var(--color-border);
   border-right: 1px solid var(--color-border);
 }
-.container h3{
+
+.container h3 {
   line-height: 1;
 }
-.container p{
+
+.container p {
   line-height: 1.75;
 }
 
@@ -244,16 +258,14 @@ main li {
     border-right: none;
   }
 
-    .container ul {
+  .container ul {
     padding: 0px 15px;
-  
+
   }
 
   .formulario {
     max-width: 100%;
   }
-
-
 
 }
 
